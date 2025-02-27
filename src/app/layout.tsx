@@ -12,7 +12,7 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>): ReactElement {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className="--font-geist-sans --font-geist-mono antialiased">
         <ThemeProvider attribute="class" defaultTheme="dark">
           {children}
