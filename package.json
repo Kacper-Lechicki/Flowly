@@ -5,7 +5,8 @@
   "scripts": {
     "----------BASIC----------": "exit 0",
     "prepare": "husky install && node setup-husky.js",
-    "start:dev": "next dev --turbopack"
+    "start:dev": "next dev --turbopack",
+    "get:last-commit-id": "git rev-parse HEAD"
   },
   "dependencies": {
     "class-variance-authority": "~0.7.1",
