@@ -23,11 +23,7 @@ packageJson.scripts = packageJson.scripts || {};
 packageJson.scripts.prepare = 'husky install && node setup-husky.js';
 
 packageJson['lint-staged'] = packageJson['lint-staged'] || {
-  '**/*.{js,jsx,ts,tsx}': [
-    'npx prettier --write',
-    'npx eslint --fix',
-    'npx eslint',
-  ],
+  '**/*.{js,jsx,ts,tsx}': ['npx prettier --write', 'npx eslint --fix'],
 };
 
 writeFileSync('package.json', JSON.stringify(packageJson, null, 2) + '\n');
