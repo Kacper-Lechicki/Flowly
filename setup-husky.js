@@ -9,11 +9,7 @@ if (!existsSync('.husky')) {
   mkdirSync('.husky');
 }
 
-const preCommitHook = `#!/bin/sh
-. "$(dirname "$0")/_/husky.sh"
-
-npx lint-staged --verbose
-`;
+const preCommitHook = `npx lint-staged --verbose`;
 
 writeFileSync('.husky/pre-commit', preCommitHook, { mode: 0o755 });
 
