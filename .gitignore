@@ -77,3 +77,5 @@ Dockerfile
 
 ### Other
 certificates/
+.husky/
+lint-staged.config.js
